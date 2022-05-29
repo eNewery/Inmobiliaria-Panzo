@@ -1,0 +1,148 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: 200;
+}
+html,
+body {
+    background-color: #DCF2FF;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* GRID AREAS */
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+/* GRID AREAS */
+
+/* CONTAINER */
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 72% 15.7%;
+  grid-template-areas: "header" "main" "footer";
+}
+/* CONTAINER */
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom:1px solid black;
+}
+
+/* HEADER LOGO */
+.header__logo{
+margin:10px;
+}
+/* HEADER LOGO */
+
+
+/* HEADER NAV */
+.header__nav {
+    width: 100%;
+  nav {
+    ul {
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+      display: flex;
+      li {
+        a {
+            font-size: 24px;
+          color: black;
+        }
+      }
+    }
+  }
+}
+/* HEADER NAV */
+
+
+/* HEADER */
+
+/* MAIN INDEX */
+
+/* INDEX MAIN */
+.index__main {
+}
+/* INDEX MAIN */
+
+/* INDEX TITLE */
+.index__title {
+    h1{
+        font-weight: 400;
+        font-size: 36px;
+        margin-bottom:100px;
+    }
+}
+/* INDEX TITLE */
+
+/* INDEX TEXT */
+.index__text {
+    h3{
+        font-size:24px;
+    }
+    h4{
+        font-size:22px;
+        a{
+            color:blue;
+        }
+    }
+}
+/* INDEX TEXT */
+
+/* INDEX IMAGES */
+.index__images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        margin:0px 5px 0px 5px;
+        width: 250px;
+        height: 175px;
+    }
+}
+/* INDEX IMAGES */
+
+/* MAIN INDEX */
+
+/* FOOTER */
+footer{
+    .blue{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+background-color: #00a3ff;
+height: 65%;
+a{
+    color:white;
+    font-size:24px;
+}
+    }
+    .black{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35%;
+        background-color: black;
+        p{
+            display: inline;
+            color:white;
+        }
+    }
+}
+/* FOOTER */
